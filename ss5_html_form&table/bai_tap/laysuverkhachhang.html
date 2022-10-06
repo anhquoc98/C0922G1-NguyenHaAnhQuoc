@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Market Research Survey</h1>
+<h4>Please take a few moments to complete this satisfaction survey</h4>
+<hr>
+<form>
+    What is your age range?<br>
+    <select style="width: 500px">
+        <option>18-24</option>
+        <option>25-34</option>
+        <option>35-50</option>
+        <option>50+</option>
+    </select><br>
+    What is your yearly income range?<br>
+    <select style="width: 500px">
+        <option>$0-$25000</option>
+        <option>$25001-$50000</option>
+        <option>$50001-$100000</option>
+        <option>$10000+</option>
+    </select><br>
+    Gender Identity<br>
+        <input name="gt"type="radio"/>Male<br>
+        <input name="gt"type="radio"/>Female<br>
+        <input name="gt"type="radio"/>Nonbinary<br>
+       <input name="gt"type="radio"/>Other<br>
+    <input name="test" type="text"style="width: 500px"/><br>
+    Which of the following products have your purchased in the last 2 months. Please check all that apply.
+<br><input name="product"type="checkbox"/>Product1
+    <br><input name="product"type="checkbox"/>Product2
+    <br><input name="product"type="checkbox"/>Product3<br>
+    How often would you use our new product?<br>
+    <input name="date"type="radio"/>Daily<br>
+    <input name="date"type="radio"/>Weekly<br>
+    <input name="date"type="radio"/>Monthly<br>
+    What would you pay for the new product?<br>
+    <table>
+        <tr>
+            <td>$</td>
+            <td><input style="width: 50px" name="$"type="text"></td>
+            <td>.</td>
+            <td><input style="width: 20px" name="$1"type="text"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Dollars</td>
+            <td></td>
+            <td>Cents</td>
+        </tr>
+    </table><br>
+    What features would you like to see in the new product.<br>
+    <textarea style="width: 500px "></textarea>
+<br>Please rate your lever or agreement with the following statements<br>
+    <table border="2">
+        <tr>
+            <td></td>
+            <td>StrongLy Disagree</td>
+            <td>Disagree</td>
+            <td>Agree</td>
+            <td>StrongLy Agree</td>
+        </tr>
+        <tr>
+            <th>Our Products are priced fairly</th>
+            <td><input type="radio" name="OPAPF" value="1"style="100"/><br>1</td>
+            <td><input type="radio" name="OPAPF" value="2"style="100"/></br>2</td>
+            <td><input type="radio" name="OPAPF" value="3"style="100"/><br>3</td>
+            <td><input type="radio" name="OPAPF" value="4"style="100"/><br>4</td>
+        </tr>
+        <tr>
+            <th>Our Products are hight quality</th>
+            <td><input type="radio" name="OPAHQ" value="1"style="100"/><br>1</td>
+            <td><input type="radio" name="OPAHQ" value="2"style="100"/></br>2</td>
+            <td><input type="radio" name="OPAHQ" value="3"style="100"/><br>3</td>
+            <td><input type="radio" name="OPAHQ" value="4"style="100"/><br>4</td>
+        </tr>
+        <tr>
+            <th>You would recommend our product to a friend or coworkr</th>
+            <td><input type="radio" name="YWROPTAFOW" value="1"style="100"/><br>1</td>
+            <td><input type="radio" name="YWROPTAFOW" value="2"style="100"/></br>2</td>
+            <td><input type="radio" name="YWROPTAFOW" value="3"style="100"/><br>3</td>
+            <td><input type="radio" name="YWROPTAFOW" value="4"style="100"/><br>4</td>
+        </tr>
+    </table>
+    <input name="sumbit" type="submit"value="submit"/>
+</form>
+</body>
+</html>
