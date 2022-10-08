@@ -1,0 +1,4 @@
+function showmessage() {
+    alert('xinchao')
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<table>
+<tr>
+    <th>Amount</th>
+    <th>From Currency</th>
+    <th>To Currency</th>
+</tr>
+<tr>
+    <th><input id="tienNhapVao" name="Vnd" type="text"></th>
+    <th>
+        <select id="from"><option value="VND">VND</option>
+            <option value="usd">usd</option>
+        </select>
+    </th>
+    <th>
+        <select id="to"><option value="VND">VND</option>
+            <option value="usd">usd</option>
+        </select>
+    </th>
+    <th><input id="covert" name="convert"type="button"value="Convert"></th>
+</tr>
+</table>
+<button onclick="chuyenTien()" >kiem tra tien</button>
+<br><p id="Result"></p>
+<script src="UDCDTT.js"></script>
+</body>
+</html>
