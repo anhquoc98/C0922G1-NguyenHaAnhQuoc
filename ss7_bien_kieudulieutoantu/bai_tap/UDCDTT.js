@@ -1,6 +1,5 @@
 function chuyenTien () {
     let tienNhap = document.getElementById("tienNhapVao").value;
-    alert("tien nhap vao la" + tienNhap)
     let den = document.getElementById('from').value;
     let di = document.getElementById('to').value;
     let result;
