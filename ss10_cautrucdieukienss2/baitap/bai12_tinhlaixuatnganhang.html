@@ -8,7 +8,7 @@
 <h3>lãi xuất ngân hàng</h3><br>
 <input type="number"name="tiengoi"id="tiengoi">tiền nhập<br>
 <input type="number"name="sothang"id="sothang">số tháng<br>
-<button onclick="tiennganhang()">tiencoduoc</button>
+<button onclick="tiennganhang()">tiền phải trả</button>
 <br><p id="tiennhan"></p>
 <script>
     function tiennganhang() {
@@ -17,15 +17,14 @@
         let laixuat;
         let tiennhanduoc;
         if (b<=12){
-            laixuat=7/12;
-            tiennhanduoc =a+(b*laixuat);
-            alert(tiennhanduoc);
+            laixuat=7/12/100;
+            tiennhanduoc =a*b*laixuat;
         }
         else if (b>12){
-            laixuat=7.2/12;
-            tiennhanduoc =a+(b*laixuat);
+            laixuat=7.2/12/100;
+            tiennhanduoc =a*b*laixuat;
         }
-        document.getElementById('tiennhan').innerHTML='tiennhanđc:'+(tiennhanduoc)+'VND';
+        document.getElementById('tiennhan').innerHTML='trả tiền:'+(tiennhanduoc +a )+'VND';
     }
 
 
