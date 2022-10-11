@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Thuế lương</h3>
+<pre>	Thu nhập tháng	     Số thuế phải nộp
+1	TN <= 5tr	        TN x 5%
+2	5tr < TN <= 10tr	TN x 10% - 0.25tr
+3	10tr < TN <= 18tr	TN x 15% - 0.75tr
+4	18tr < TN <= 32tr	TN x 20% - 1.65tr
+5	32tr < TN <= 52tr	TN x 25% - 3.25tr
+6	52tr < TN <= 80tr	TN x 30% - 5.85tr
+7	TN > 80tr	        TN x 35% - 9.85tr</pre>
+<input name="TN"type="text"id="luong">
+<button onclick="thunhap()">thunhap</button>
+<br><p id="tienluong"></p>
+<script>
+    function thunhap() {
+        let a = parseFloat(document.getElementById('luong').value);
+        let b;
+        if (a<=5){
+            b=a*5/100;
+        }
+        else if (a<=10){
+            b=a*10/100;
+        }
+        else if (a<=18){
+            b=a*15/100;
+        }
+        else if (a<=32){
+            b=a*20/100;
+        }
+        else if (a<=52){
+            b=a*25/100;
+        }
+        else if (a<=80){
+            b=a*30/100;
+        }
+        else if (a>80){
+            b=a*35/100;
+        }
+        document.getElementById('tienluong').innerHTML='tiền lương đã nộp thuế'+b+'tr';
+
+    }
+</script>
+</body>
+</html>

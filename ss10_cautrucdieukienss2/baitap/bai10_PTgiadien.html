@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>Bậc 1: 0 - 50 kWh (1.678 đồng/ kWh).
+     Bậc 2: 50 - 100 kWh ( 1.734 đồng/ kWh).
+     Bậc 3: 100 - 200 kWh (2.014 đồng/ kWh).
+     Bậc 4: 200 - 300 kWh (2.536 đồng/ kWh).
+     Bậc 5: 300 - 400 kWh (2.834 đồng/ kWh).
+     Bậc 6: 400 - 500 kWh (2.927 đồng/ kWh).</pre>
+<input id="giadien" type="number" name="giadien">
+<button onclick="tiendien();">tiendien</button>
+<p id="tiendientieuthu"></p>
+<script>
+    function tiendien() {
+        let a =parseFloat(document.getElementById('giadien').value);
+        let x;
+        if (a<50){
+           x=1.678* a;
+           alert('tiền điền tiêu thụ'+(x*1000)+'vnd');
+
+        }
+        else if(a<100){
+            x=1.734* a;
+            alert('tiền điền tiêu thụ'+(x*1000)+'vnd');
+
+        }
+        else if(a<200){
+            x=2.014* a;
+            alert('tiền điền tiêu thụ'+(x*1000)+'vnd');
+
+        }
+        else if(a<300){
+            x=2.536* a;
+            alert('tiền điền tiêu thụ'+(x*1000)+'vnd');
+
+        }
+        else if(a<400){
+            x=2.834* a;
+            alert('tiền điền tiêu thụ'+(x*1000)+'vnd');
+
+        }
+        else if(a<500){
+            x=2.927* a;
+            alert('tiền điền tiêu thụ'+(x*1000)+'vnd');
+
+        }
+        document.getElementById('tiendientieuthu').innerHTML='tiendientieuthula: '+x+'vnd';
+        }
+
+</script>
+</body>
+</html>

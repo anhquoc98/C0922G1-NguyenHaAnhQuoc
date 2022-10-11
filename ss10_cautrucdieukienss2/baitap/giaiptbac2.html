@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert('phương trình bậc 2 ax^2+bx+c=0');
+let a=+prompt('nhập a');
+let b=+prompt('nhập b');
+let c=+prompt('nhập c');
+let denta;
+denta= b*b-(4*a*c);
+if (denta >0){
+        let x1;
+        let x2;
+        x1=(-b+Math.sqrt(denta)/(2*a));
+        x2=(-b-Math.sqrt(denta)/(2*a));
+        alert('phương trình có 2 nghiệm');
+        alert('x1='+x1+'và x2='+x2);
+}else if (denta =0){
+    let x
+    x=-(b/(2*a));
+    alert('phương trình có 1 nghiệm='+x);
+}
+else {
+    alert('phương trình vô nghiệm');
+
+}
+</script>
+</body>
+</html>
