@@ -15,16 +15,16 @@
         let a=parseFloat(document.getElementById('tiengoi').value);
         let b=parseFloat(document.getElementById('sothang').value);
         let laixuat;
-        let tiennhanduoc;
+        let tienlai;
         if (b<=12){
             laixuat=7/12/100;
-            tiennhanduoc =a*b*laixuat;
+            tienlai =a*b*laixuat;
         }
         else if (b>12){
             laixuat=7.2/12/100;
-            tiennhanduoc =a*b*laixuat;
+            tienlai =a*b*laixuat;
         }
-        document.getElementById('tiennhan').innerHTML='trả tiền:'+(tiennhanduoc +a )+'VND';
+        document.getElementById('tiennhan').innerHTML='trả tiền:'+(tienlai +a )+'VND';
     }
 
 
