@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt('nhap so nguyen');
+    let v = [];
+    x = [];
+    for (let i = 0; i < num; i++) {
+        v[i] = +prompt('so nguyen' + (i+1));
+
+        }
+    x = v.sort(function (a,b) {
+        return b-a;
+    })
+    document.write(x)
+
+</script>
+</body>
+</html>
