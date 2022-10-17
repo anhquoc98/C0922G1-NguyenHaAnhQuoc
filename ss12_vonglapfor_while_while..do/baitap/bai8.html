@@ -5,21 +5,30 @@
     <title>Title</title>
 </head>
 <body>
+<button onclick="doanso()"type="button">Đoán số</button>
 <script>
-    for (i = 1; i <= 8; i++) {
-        for (j = 1; j <= 20; j++) {
-            if (i ==1 || i ==8){
-                document.write("*")
-            }else {
-                if (j == 1 || j == 20) {
-                    document.write("*")
-                }
-                if (j > 1 && j < 20) {
-                    document.write("&nbsp&nbsp")
-                }
+    function doanso() {
+        let num1 =+prompt('số bạn muốn đoán lớn nhất bnhiu');
+        let random =Math.floor(Math.random()*num1);
+        let num2 =+prompt('giá trị bạn đoán');
+        let count =0
+        while (num2 != random){
+            if (num2>random){
+                alert('số bạn đoán lớn hơn');
+            }
+            else {
+                alert('số bạn đoán bé hơn');
+            }
+            num2 =+prompt('giá trị bạn đoán')
+            count++;
+            if (count ==3){
+                alert('bạn hết lượt đoán');
+                break;
             }
         }
-        document.write("<br>")
+        if (random == num2){
+            alert('bạn đoán đúng')
+        }
     }
 </script>
 </body>
