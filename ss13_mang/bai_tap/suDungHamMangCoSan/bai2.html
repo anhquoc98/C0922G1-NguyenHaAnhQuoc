@@ -6,14 +6,17 @@
 </head>
 <body>
 <script>
-    let num=parseInt(prompt('nhapso'));
+    let num=[2,5,6,8,7,9,10,11,15,17];
     let str =num.toString();
     let result =[str[0]];
-    for (let x=0;x<str.length;x++){
-        if ((x-1)%2 ==0&&x%2==0){
-            alert('-'+result);
+    for (let i=1;i<str.length;i++){
+        if (str[i-1]%2 ===0&& str[i]%2 ===0){
+            result.push('-',str[i]);
+        }else {
+            result.push(str[i])
         }
     }
+    document.write(result.join(''))
 </script>
 </body>
 </html>
