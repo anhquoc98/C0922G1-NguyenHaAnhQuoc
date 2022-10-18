@@ -6,16 +6,15 @@
 </head>
 <body>
 <script>
-    let a=[5,63,3,5,'quoc'];
+    let a=['quốc','khánh','đạt','nam'];
     let b=a.length;
     let count =0
     for (i=0;i<b;i++) {
-        if (typeof a[i] == "number") {
+        if (typeof a[i] == 'string') {
             count++;
         }
     }
     document.write("Số ký tự trong mảng là :" + count);
-
 </script>
 </body>
 </html>
