@@ -5,6 +5,24 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let str =prompt("nhập vào/");
+    let usper ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let lower = 'abcdefghijklmnopqrstuvwxyz';
+    let result =[]
+    for (let i=0;i<str.length;i++){
+        if (usper.indexOf(str[i]) !==-1){
+            result.push(str[i].toLowerCase());
+        }
+        else if(lower.indexOf(str[i]) !==-1){
+            result.push(str[i].toUpperCase());
+        }
+        else {
+            result.push(str[i]);
+        }
+    }
+    document.write(result.join(''))
 
+</script>
 </body>
 </html>

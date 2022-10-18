@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    let num=[2,5,6,8,7,9,10,11,15,17];
+    let num=window.prompt();
     let str =num.toString();
     let result =[str[0]];
     for (let i=1;i<str.length;i++){
@@ -16,7 +16,7 @@
             result.push(str[i])
         }
     }
-    document.write(result.join(''))
+    document.write(result.join(''));
 </script>
 </body>
 </html>
