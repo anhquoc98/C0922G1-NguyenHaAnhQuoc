@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function mangSoNguyen() {
+        let a=[7,9,5,1,2,3,68,52,79];
+        let first =0;
+        let last =a.length -1;
+        while (first<last){
+            let b=a[first];
+            a[first]=a[last];
+            a[last]=b;
+            first++;
+            last--;
+        }
+        document.write(a)
+    }
+    mangSoNguyen()
+</script>
+</body>
+</html>
