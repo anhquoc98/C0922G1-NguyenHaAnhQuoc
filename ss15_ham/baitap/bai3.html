@@ -9,13 +9,14 @@
     let a =+prompt("so thu 1");
     let b=+prompt("so thu 2");
     thamso(a,b)
-    function thamso() {
-        if (a>b){
+    function thamso(thamSo1, thamSo2) {
+
+        if (thamSo1>thamSo2){
             alert('thông báo cho người dùng')
         }
         else {
             let result
-            result =a+b;
+            result =thamSo1+thamSo2;
             alert(result);
         }
     }

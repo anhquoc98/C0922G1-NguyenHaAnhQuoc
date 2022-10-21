@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="hinhChuNhat" width="200" height="200" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    let a =document.getElementById("hinhChuNhat");
+    let hcn= a.getContext("2d");
+    let grs=hcn.createRadialGradient(75,50,5,90,60,100)
+    grs.addColorStop(0,"blue");
+    grs.addColorStop(1,"red");
+    hcn.fillStyle =grs;
+    hcn.fillRect(10,10,150,80);
+    
+
+
+    /*class rentangle {
+        constructor (weight, leight,) {
+            this.weight = weight;
+            this.leight = leight;
+        }
+
+    }
+    let newRentangle =[];
+    let h1 = new rentangle(5,10);
+    newRentangle.push(h1);
+    alert(h1.getInfo());*/
+</script>
+</body>
+</html>
