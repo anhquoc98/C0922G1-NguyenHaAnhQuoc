@@ -11,7 +11,7 @@
             this.weight = weight;
         }
         getWeight() {
-            return this.weight;//2
+            return this.weight;
         }
 
         setWeight(weight) {
@@ -27,11 +27,7 @@
         }
 
         decreaseApple(){
-            if(this.isEmpty()){
-                alert("Táo đã hết rồi");
-            }else {
-                this.weight--;
-            }
+            this.weight --;
         }
     }
 
@@ -52,7 +48,7 @@
         }
 
         isMale(){
-            if(this.gender == 1){
+            if(this.gender){
                 return true;
             }else {
                 return false;
@@ -93,7 +89,7 @@
     }
 
 
-    let adam = new Human("adam", 1, 65);
+    let adam = new Human("adam", 1, 100);
     let eva = new Human("eva", 2, 55);
     let apple_1 = new Apple(10);
 
