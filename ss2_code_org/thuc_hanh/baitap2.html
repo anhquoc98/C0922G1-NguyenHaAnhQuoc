@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =+prompt("nhập số phần tử của mảng");
+    let num =[];
+    let count =0;
+    let sum=0;
+    let avg;
+    for (let i =0;i<a;i++){
+        num[i]=+prompt("phần tử mảng"+i)
+      sum +=num[i];
+    }
+    avg =sum/a;
+    for(let j=0;j<num.length;j++){
+        if (avg ==num[j]){
+            count++;
+        }
+    }
+    document.write("trung bình các phần tử của mảng "+avg)
+
+    document.write("xuất hiện"+count)
+</script>
+</body>
+</html>

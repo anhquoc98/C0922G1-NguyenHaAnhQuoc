@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MenuGoiThucUong</title>
+</head>
+<body>
+<button onclick="caFe()">1.Cafe</button>
+<p id="demo"></p>
+<button onclick="camVat()">2.Cam vắt</button>
+<p id="demo1"></p>
+<button onclick="nuocEpCarot()">3.Nước ép cà rốt</button>
+<p id="demo2"></p>
+<button onclick="nuocEpCaChua()">4.Nước ép cà chua</button>
+<p id="demo3"></p>
+<button onclick="nuocLoc()">5.Nước lọc</button>
+<p id="demo4"></p>
+<button onclick="nuocDua()">6.Nước dừa</button>
+<p id="demo5"></p>
+<button onclick="tongket()">tính tổng tiền</button>
+<p id ="tongket"></p>
+<script>
+    let sumCf = 0;
+    let sumCv =0;
+    let sumNECR=0;
+    let sumNECC=0
+    let sumNL=0;
+    let sumND=0;
+    function caFe() {
+        let sl =+prompt("bạn mua bnhiu");
+        let gia =15000
+        sumCf =sl *gia
+        document.getElementById('demo').innerHTML="tổng số bạn mua"+sumCf+"đ Cafe";
+    }
+    function camVat() {
+        let sl =+prompt("bạn mua bnhiu");
+        let gia1 =20000
+        sumCv =sl *gia1
+        document.getElementById('demo1').innerHTML="tổng số bạn mua"+sumCv+"đ Cam Vắt";
+    }
+    function nuocEpCarot(){
+        let sl =+prompt("bạn mua bnhiu");
+        let gia2 =25000
+        sumNECR =sl *gia2
+        document.getElementById('demo2').innerHTML="tổng số bạn mua"+sumNECR+"đ Nước ép cà rốt";
+    }
+    function nuocEpCaChua(){
+        let sl =+prompt("bạn mua bnhiu");
+        let gia =25000
+        sumNECC =sl *gia
+        document.getElementById('demo3').innerHTML="tổng số bạn mua"+sumNECC+"đ Nước ép cà chua";
+    }
+    function nuocLoc(){
+        let sl =+prompt("bạn mua bnhiu");
+        let gia =10000
+        sumNL =sl *gia
+        document.getElementById('demo4').innerHTML="tổng số bạn mua"+sumNL+"đ Nước lọc";
+    }
+    function nuocDua(){
+        let sl =+prompt("bạn mua bnhiu");
+        let gia =30000
+        sumND =sl *gia
+        document.getElementById('demo5').innerHTML="tổng số bạn mua"+sumND+"đ Nước dừa";
+    }
+    function tongket() {
+        let avg =sumCf+sumCv+sumNECC+sumNECR+sumND+sumNL;
+        document.getElementById('tongket').innerHTML=avg+"Đ";
+    }
+
+
+</script>
+</body>
+</html>

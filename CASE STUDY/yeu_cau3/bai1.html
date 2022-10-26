@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num =+prompt("nhập độ dài mảng a");
+    let a =[];
+    let b=[];
+    for (let i=0;i<num;i++){
+        a[i]=+prompt("mảng a"+i)
+    }
+    b[0]=a[0]
+    for (let j=1;j<a.length;j++){
+        b[j]=a[j]+b[j-1];
+    }
+
+    document.write(b)
+
+</script>
+</body>
+</html>

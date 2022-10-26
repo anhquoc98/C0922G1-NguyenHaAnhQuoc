@@ -6,15 +6,16 @@
 </head>
 <body>
 <script>
-    let num =+prompt('khoitaosonguyen')
-let v=[]
-for(let i=0;i<num;i++){
-    v[i]=+prompt('nhap so'+(i+1));
-    if (v[i] == num){
-        v.splice(i,2)
-        v.push(0)
+    let num = +prompt('khoitaosonguyen')
+    let v = []
+    for (let i = 0; i < num; i++) {
+        v[i] = +prompt('nhap so' + (i + 1));
+        if (v[i] == num) {
+            v.splice(i, 2)
+            v.push(0)
+        }
     }
-}document.write(v)
+    document.write(v)
 
 </script>
 </body>

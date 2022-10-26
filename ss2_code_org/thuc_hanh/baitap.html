@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =+prompt('Nhập phần tử mảng');
+    let num =[];
+    let count =0;
+    let count1=0;
+
+    for (let i=0;i<a;i++){
+        num[i]=+prompt("phần tử mảng"+i);
+        if (num[i]%2==0){
+            count++;
+        }
+        if(num[i]%2 != 0){
+            count1++;
+        }
+    }
+    document.write(num)
+    document.write(count)
+    document.write(count1)
+
+    if (count == count1){
+        alert('oke');
+    }
+    else {
+        alert('no')
+    }
+
+</script>
+</body>
+</html>

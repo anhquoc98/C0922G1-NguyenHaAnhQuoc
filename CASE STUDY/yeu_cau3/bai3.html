@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhập độ dài a")
+    let a = []
+    for (let i = 0; i < num; i++) {
+        a[i] = +prompt('mảng a' + i);
+    }
+    let b = []
+    let num1 = +prompt("nhập độ dài b");
+    for (let j = 0; j < num1; j++) {
+        b[j] = +prompt('mảng b' + j);
+    }
+    let fra ;
+    let max =0;
+    let c=0;
+    for (let k=0;k<a.length;k++){
+            fra =a[k]/b[k];
+            if (fra >max){
+                fra =max;
+                c=k;
+            }
+        }document.write(c)
+
+</script>
+</body>
+</html>

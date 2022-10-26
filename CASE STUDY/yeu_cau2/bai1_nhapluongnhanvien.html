@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế lương nhân viên</title>
+</head>
+<body>
+<script>
+    let a = +prompt("lương nhân viên");
+    let result ;
+    if (a >15){
+        result = a *20/100;
+    }
+    else if (a>7 &&a<=15){
+        result = a*10/100;
+    }
+    else if (a<=7){
+        result =a*5/100;
+    }
+    document.write("Thuế nhân viên phải đóng ="+result+"tr"+"Lương của nhân viên ="+(a-result)+"tr");
+</script>
+</body>
+</html>
