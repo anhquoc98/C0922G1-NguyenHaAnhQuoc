@@ -6,14 +6,23 @@
 </head>
 <body>
 <script>
-    let a = prompt("kiểm tra bảng chữ cái");
-
-    if (a == 'u', 'i', 'a', 'e' ,'o'){
-        document.write('các kí tự nguyên âm');
-    }
-    else {
-        document.write('các kí tự phụ âm');
-    }
+   let a = prompt("Nhập ký tự cần kiểm tra")
+   switch (a) {
+       case "o":
+       case "e":
+       case "i":
+       case "a":
+       case "u":
+       case "A":
+       case "E":
+       case "O":
+       case "I":
+       case "U":
+           alert("đây là kí tự nguyên âm");
+           break;
+       default:
+           alert("đây là kí tự phụ âm")
+   }
 </script>
 </body>
 </html>
