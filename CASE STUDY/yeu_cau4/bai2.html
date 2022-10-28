@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cho xâu kí tự. Hãy đếm số lượng kí tự khác nhau trong xâu đó</title>
+</head>
+<body>
+<script>
+    let a =prompt("Xâu kí tự");
+    let mang =a.split('');
+    console.log(mang)
+    let mang1=[]
+    for (let i=0;i<mang.length;i++){
+        if (mang1.indexOf(mang[i])==-1){
+            mang1.push(mang[i]);
+        }}
+    document.write(mang1)
+    //let arr = [1,2,3];
+    //document.write(arr.indexOf(5));
+</script>
+</body>
+</html>

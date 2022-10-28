@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>: Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n. Với m, n là các số nhập từ bàn phím</title>
+</head>
+<body>
+<script>
+    let M =[];
+    let N =[];
+    let a = +prompt("chiều dài của m");
+    for (let k = 0; k < a; k++) {
+        M[k]= +prompt("mảng M:" + k);
+    }
+    let b = +prompt("chiều dài mảng n");
+    for (let y = 0; y < b; y++) {
+        N[y] = +prompt("Mảng N:" + y);
+    }
+    tongCacSoChang(M,N);
+    function tongCacSoChang(m,n) {
+        let sum=0;
+        let sum1=0;
+        let tong;
+        for (i=0;i<m.length;i++){
+            if(m[i]%2==0){
+                sum += m[i];
+            }
+        }
+        for (j=0;j<n.length;j++){
+            if(n[j]%2==0){
+                sum1 += n[j];
+            }
+        }
+        tong =sum +sum1;
+        document.write("tổng các số chảng m*n="+tong);
+    }
+</script>
+</body>
+</html>

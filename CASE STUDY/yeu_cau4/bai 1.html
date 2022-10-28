@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu sao cho trong xâu không có 2 dấu cách liền
+        nhau và bắt đầu mỗi từ phải in hoa</title>
+</head>
+<body>
+<script>
+    let a = prompt("biến đổi xâu kí tự");
+    let newstr =a.toLowerCase().split(" ");
+    for (let i=0;i<newstr.length;i++){
+        if (newstr[i] !=""){
+            newstr[i]=newstr[i][0].toUpperCase()+newstr[i].slice(1);
+        }
+    }
+    document.write(newstr.join(" "))
+        let max ='';
+        let maxlength=0;
+        for (let i=0;i<newstr.length;i++){
+            if (newstr[i].length>maxlength){
+                maxlength =newstr[i].length;
+                max =newstr[i];
+            }
+        }
+        document.write("chuổi dài"+max+"có kí tự"+maxlength)
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>: Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng</title>
+</head>
+<body>
+<script>
+    let a =prompt("xâu 1");
+    let str =a.split('');
+    let b=prompt("xâu2")
+    let str1=b.split('')
+    let count=0;
+    for (let i=0;i<str.length;i++)
+        for (j=0;j<str1.length;j++){
+            if (str1[j]==str[i]){
+                count++;
+                str1.splice(0,1);
+                break;
+            }
+
+
+    }
+    document.write(count)
+</script>
+</body>
+</html>
