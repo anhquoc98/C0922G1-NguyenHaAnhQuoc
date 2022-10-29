@@ -6,33 +6,30 @@
 </head>
 <body>
 <script>
-    let M =[];
-    let N =[];
+    let M = [];
+    let N = [];
     let a = +prompt("chiều dài của m");
     for (let k = 0; k < a; k++) {
-        M[k]= +prompt("mảng M:" + k);
+        M[k] = +prompt("mảng M:" + k);
     }
     let b = +prompt("chiều dài mảng n");
     for (let y = 0; y < b; y++) {
         N[y] = +prompt("Mảng N:" + y);
     }
-    tongCacSoChang(M,N);
-    function tongCacSoChang(m,n) {
-        let sum=0;
-        let sum1=0;
-        let tong;
-        for (i=0;i<m.length;i++){
-            if(m[i]%2==0){
-                sum += m[i];
+    let mang = [M, N];
+    alert(mang)
+    tongCacSoChang(mang);
+
+    function tongCacSoChang(mang) {
+        let sum = 0;
+        for (let i = 0; i < mang.length; i++) {
+            for (let j = 0; j < mang[i].length; j++) {
+                if (mang[i][j] % 2 == 0) {
+                    sum += mang[i][j];
+                }
             }
         }
-        for (j=0;j<n.length;j++){
-            if(n[j]%2==0){
-                sum1 += n[j];
-            }
-        }
-        tong =sum +sum1;
-        document.write("tổng các số chảng m*n="+tong);
+        document.write("tổng các số chẳng m*n=" + sum);
     }
 </script>
 </body>
