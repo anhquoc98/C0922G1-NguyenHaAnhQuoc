@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số nguyên tố mảng 2 chiều</title>
+</head>
+<body>
+<script>
+    let M = [];
+    let N = [];
+    let a = +prompt("chiều dài của m");
+    for (let k = 0; k < a; k++) {
+        M[k] = +prompt("mảng M:" + k);
+    }
+    let b = +prompt("chiều dài mảng n");
+    for (let y = 0; y < b; y++) {
+        N[y] = +prompt("Mảng N:" + y);
+    }
+    let mang = [M, N];
+    isPrime(mang)
+
+    function isPrime(number) {
+        number = [];
+        let kiemtra;
+        let songuyento = []
+        let count =0
+        for (let i = 0; i < number.length; i++) {
+            for (let j = 2; j < number[i]; j++) {
+                kiemtra = false;
+                if (number[i] % j == 0) {
+                    kiemtra = false;
+                    break;
+                }
+                if (kiemtra==true){
+                    kiemtra =true;
+                    songuyento.push(number[i]);
+                    count++;
+                }break;
+            }
+        }document.write("số nguyên tố trong mảng"+songuyento+"số lương nguyên tố trong mảng"+count)
+    }
+
+</script>
+</body>
+</html>
