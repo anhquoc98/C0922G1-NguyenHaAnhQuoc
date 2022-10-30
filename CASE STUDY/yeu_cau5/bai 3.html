@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị min ,max</title>
+</head>
+<body>
+<script>
+    let M = [];
+    let N = [];
+    let a = +prompt("chiều dài của m");
+    for (let k = 0; k < a; k++) {
+        M[k] = +prompt("mảng M:" + k);
+    }
+    let b = +prompt("chiều dài mảng n");
+    for (let y = 0; y < b; y++) {
+        N[y] = +prompt("Mảng N:" + y);
+    }
+    let mang = [M, N];
+    giatriMinMax(mang)
+
+    function giatriMinMax(num) {
+        let min = [];
+        let max = [];
+        for (let i = 0; i < num.length; i++) {
+            if (max < num[i]) {
+                max = num[i];
+            }
+        }
+        document.write(max)
+        for (let j = 0; j < num.length; j++) {
+            if (num[j] <= min) {
+                min = num[j]
+            }
+        }
+        document.write(min)
+    }
+</script>
+</body>
+</html>
