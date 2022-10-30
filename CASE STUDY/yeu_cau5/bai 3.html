@@ -20,20 +20,25 @@
     giatriMinMax(mang)
 
     function giatriMinMax(num) {
-        let min = [];
-        let max = [];
+        let min = num[0][0];
+        let max = num[0][0];
         for (let i = 0; i < num.length; i++) {
-            if (max < num[i]) {
-                max = num[i];
+            for (let j = 0; j < num[i].length; j++) {
+                if (max < num[i][j]) {
+                    max = num[i][j];
+                }
             }
         }
-        document.write(max)
-        for (let j = 0; j < num.length; j++) {
-            if (num[j] <= min) {
-                min = num[j]
+        document.write("số lớn nhất ="+max"<br>")
+        for (let n = 0; n < num.length; n++) {
+            for (let m = 0; m < num[n].length; m++) {
+                if (num[n][m] < min) {
+                    min = num[n][m];
+                }
             }
+
         }
-        document.write(min)
+        document.write("số bé nhất ="+min)
     }
 </script>
 </body>
