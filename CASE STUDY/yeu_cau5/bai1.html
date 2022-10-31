@@ -6,17 +6,17 @@
 </head>
 <body>
 <script>
-    let M = [];
-    let N = [];
+    let m = [];
+    let n = [];
     let a = +prompt("chiều dài của m");
     for (let k = 0; k < a; k++) {
-        M[k] = +prompt("mảng M:" + k);
+        m[k] = +prompt("mảng M:" + k);
     }
     let b = +prompt("chiều dài mảng n");
     for (let y = 0; y < b; y++) {
-        N[y] = +prompt("Mảng N:" + y);
+        n[y] = +prompt("Mảng N:" + y);
     }
-    let mang = [M, N];
+    let mang = [m, n];
     alert(mang)
     tongCacSoChang(mang);
 

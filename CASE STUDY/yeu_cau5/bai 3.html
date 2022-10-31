@@ -6,20 +6,20 @@
 </head>
 <body>
 <script>
-    let M = [];
-    let N = [];
+    let m = [];
+    let n = [];
     let a = +prompt("chiều dài của m");
     for (let k = 0; k < a; k++) {
-        M[k] = +prompt("mảng M:" + k);
+        m[k] = +prompt("mảng M:" + k);
     }
     let b = +prompt("chiều dài mảng n");
     for (let y = 0; y < b; y++) {
-        N[y] = +prompt("Mảng N:" + y);
+        n[y] = +prompt("Mảng N:" + y);
     }
-    let mang = [M, N];
-    giatriMinMax(mang)
+    let mang = [m, n];
+    giaTriMinMax(mang);
 
-    function giatriMinMax(num) {
+    function giaTriMinMax(num) {
         let min = num[0][0];
         let max = num[0][0];
         for (let i = 0; i < num.length; i++) {
@@ -29,7 +29,7 @@
                 }
             }
         }
-        document.write("số lớn nhất ="+max"<br>")
+        document.write("số lớn nhất ="+max+"<br>")
         for (let n = 0; n < num.length; n++) {
             for (let m = 0; m < num[n].length; m++) {
                 if (num[n][m] < min) {

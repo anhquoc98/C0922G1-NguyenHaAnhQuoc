@@ -6,38 +6,37 @@
 </head>
 <body>
 <script>
-    let M = [];
-    let N = [];
+    let m = [];
+    let n = [];
     let a = +prompt("chiều dài của m");
     for (let k = 0; k < a; k++) {
-        M[k] = +prompt("mảng M:" + k);
+        m[k] = +prompt("mảng M:" + k);
     }
     let b = +prompt("chiều dài mảng n");
     for (let y = 0; y < b; y++) {
-        N[y] = +prompt("Mảng N:" + y);
+        n[y] = +prompt("Mảng N:" + y);
     }
-    let mang = [M, N];
+    let mang = [m,n];
     isPrime(mang)
 
     function isPrime(number) {
-        number = [];
         let kiemtra;
         let songuyento = []
         let count =0
         for (let i = 0; i < number.length; i++) {
-            for (let j = 2; j < number[i]; j++) {
-                kiemtra = false;
+            for (let j = 2; j < number[i].length; j++) {
+                let kiemtra=true
                 if (number[i] % j == 0) {
                     kiemtra = false;
                     break;
                 }
-                if (kiemtra==true){
+                if (kiemtra){
                     kiemtra =true;
-                    songuyento.push(number[i]);
+                    songuyento.push(number[i][j]);
                     count++;
-                }break;
+                }
             }
-        }document.write("số nguyên tố trong mảng"+songuyento+"số lương nguyên tố trong mảng"+count)
+        }document.write("số nguyên tố trong mảng="+songuyento+"số lương nguyên tố trong mảng="+count)
     }
 
 </script>

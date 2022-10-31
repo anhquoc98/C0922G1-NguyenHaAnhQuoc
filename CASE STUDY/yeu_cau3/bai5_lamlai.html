@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Menu Đồ uống</h4>
+<table style="background: #8800ff">
+    <tr>
+        <th style="color: #eeff00">stt</th>
+        <th style="color: #ff0051">Danh sách</th>
+    </tr>
+    <tbody id="danhSachThucUong"></tbody>
+    <tr>
+        <th style="color: #00ffae">7</th>
+        <th style="color: #80ff00" onclick="ketThuc()">Thoát chọn</th>
+    </tr>
+</table>
+<p id="hoaDon"></p>
+<script>
+    let nuocUong = ["cafe","Cam vắt","Nước ép cà rốt", "Nước ép cà chua","Nước lọc","Nước dừa"];
+    let donGia = [1000,2000,3000,4000,5000,6000];
+    let count = "";
+    for (let i = 0; i < nuocUong.length; i++) {
+        count += "<tr>\n" +
+            "            <th>" + (i+1) + "</th>\n" +
+            "            <th onclick='goiMon(" + i + ")'>" + nuocUong[i] + "</th>\n" +
+            "        </tr>"
+    }
+    document.getElementById('danhSachThucUong').innerHTML = count;
+
+    let tongTien = 0;
+    let amount = 0;
+    let sum = 0;
+    function soLuong(i) {
+        amount = prompt(nuocUong[i] + " có giá là " + donGia[i] + ": Mời nhập số lượng");
+        return amount;
+    }
+
+    function tongHoaDon(donGia, soLuong){
+        tongTien = donGia*soLuong;
+        return tongTien;
+    }
+    function goiMon(i){
+        let a = soLuong(i);
+        sum += tongHoaDon(donGia[i], a);
+    }
+    function ketThuc() {
+        document.getElementById('hoaDon').innerHTML = "Tổng hóa đơn là: " + sum + "VND";
+        sum = 0;
+    }
+</script>
+</body>
+</html>

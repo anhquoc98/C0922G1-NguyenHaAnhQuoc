@@ -16,16 +16,19 @@
     for (let j = 0; j < num1; j++) {
         b[j] = +prompt('mảng b' + j);
     }
-    let fra ;
+    let fra = 0;
     let max =0;
-    let c=0;
-    for (let k=0;k<a.length;k++){
-            fra =a[k]/b[k];
-            if (fra >max){
-                fra =max;
-                c=k;
-            }
-        }document.write("độ dài"+c+"phân số lớn nhất"+fra)
+    let c = 0;
+    for (let k = 0; k < a.length; k++) {
+        fra = a[k] / b[k];
+        console.log(fra)
+        if (fra > max) {
+            max =fra;
+            console.log(max)
+        }
+        c = k;
+    }
+    document.write("độ dài" + c + "phân số lớn nhất" + max)
 
 </script>
 </body>
