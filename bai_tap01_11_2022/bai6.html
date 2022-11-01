@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình thực hiện các công việc sau:
+        Nhập liệu cho mảng có n phần tử nguyên (n > 0) từ bàn phím.
+        Sau đó tính và in ra màn hình số lượng số nguyên lẻ, số lượng số nguyên chẵn trong mảng đã nhập.
+    </title>
+</head>
+<body>
+<script>
+    let numb = +prompt("nhập độ dài mảng");
+    while (numb <= 0) {
+        numb = +prompt("mời bạn nhập lại")
+    }
+    let mang = [];
+    for (let i = 0; i < numb; i++) {
+        mang[i] = +prompt("nhập các phần tử " + i)
+    }
+    let even =[];
+    let odds=[];
+    for (let j=0;j<mang.length;j++){
+        if (mang[j]%2 ==0){
+            even.indexOf(mang[j]);
+            even.push(mang[j]);
+        }
+        if (mang[j]%2==1){
+            odds.indexOf(mang[j]);
+            odds.push(mang[j]);
+        }
+    }
+    document.write("Mảng số chẳn= "+even+"Mảng số lẽ ="+odds)
+</script>
+</body>
+</html>
