@@ -6,7 +6,26 @@
 </head>
 <body>
 <script>
-
+    let numb = +prompt("nhập độ dài mảng");
+    while (numb <= 0) {
+        numb = +prompt("mời bạn nhập lại")
+    }
+    let n = [];
+    for (let i = 0; i < numb; i++) {
+        n[i] = +prompt("nhập các phần tử " + i)
+    }
+    let kiemtra = true
+    for (let j = 0; j < n.length; j++) {
+        if (n[j] !== n[n.length - 1 - j]) {
+            kiemtra = false;
+            break;
+        }
+    }
+    if (kiemtra) {
+        alert("đối xứng")
+    } else {
+        alert('không đối xứng ')
+    }
 </script>
 </body>
 </html>
