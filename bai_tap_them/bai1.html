@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ let a= [15,7,8,20,5,2,10,1,5,2,3,5,25,2,5];
+ let b=[]
+ for (let i=0;i<a.length;i++){
+     if (i%3==0){
+         b.indexOf(a[i])
+         b.push(a[i])
+     }
+ }
+     let sum =0
+ let count =0
+    for (let j=0;j<b.length;j++){
+        if (b[j]%5==0){
+            sum +=b[j];
+            count++;
+        }
+    }
+    document.write("số trung bình="+sum/count)
+</script>
+</body>
+</html>

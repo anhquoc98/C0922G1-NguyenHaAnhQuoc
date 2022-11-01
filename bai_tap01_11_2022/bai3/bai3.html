@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình nhập  các phần tử cho mảng sao cho không có phần tử nào trùng nhau</title>
+</head>
+<body>
+<script>
+    let a =prompt("Phần tử của mảng")
+    let mang=a.slice('')
+    let mang1 =[]
+    for (let i=1;i<mang.length;i++){
+        if (mang1.indexOf(mang[i])==-1){
+            mang1.push(mang[i])
+        }
+    }
+    document.write(mang1.join(''));
+</script>
+</body>
+</html>

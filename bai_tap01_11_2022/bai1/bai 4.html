@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--4. Đếm các số chính phương có trong mảng
+5. Hiện thị các số nguyên tố có trong mảng lên màn hình
+6. Thay thế các phần tử âm có trong mảng bằng giá trị 0
+7. Xóa các phần tử âm có trong mảng
+8. Sắp xếp mảng đã nhập theo thứ tự tăng dần-->
+<script>
+    let n = +prompt("Nhập chiều dài của mảng")
+    let a = [];
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt("mảng a" + i);
+    }
+
+    function demSoChinhPhuong(number) {
+        let arr = [];
+        let count = 0;
+        for (let i = 0; i < number.length; i++) {
+            if (Math.sqrt(number[i]) % 1 == 0) {
+                arr.indexOf(number[i]);
+                arr.push(number[i]);
+                count++
+            }
+        }
+        document.write("số chính phương" + arr + "có" + count + "chính phương")
+    }
+
+
+    function cacSoNguyenTo(number) {
+        let arr = [];
+        let kiemtra = true
+        for (let i = 0; i < number.length; i++) {
+            kiemtra =true
+            for (let j = 2; j < number[i]; j++) {
+                if (number[i] % j == 0) {
+                    kiemtra = false;
+                    break;
+                }
+            }
+            if (kiemtra == true) {
+                kiemtra = true;
+                arr.indexOf(number[i]);
+                arr.push(number[i])
+            }
+        }
+        document.write("số nguyên tố" + arr)
+    }
+cacSoNguyenTo(a)
+    function thayTheCacPhanTuAmCoTrongMangBangGiaTri0(number) {
+        for (let i=0;i<number.length;i++){
+            if (number[i]<0){
+                number[i]=0
+            }
+        }document.write(number)
+
+    }
+    function xoaCacPhanTuAm(number) {
+        for (let i=0;i<number.length;i++){
+            if (number[i]<0){
+                number.splice(i,1)
+            }
+        }document.write(number)
+    }
+    function sapXepCacPhanTuTangDan(number) {
+        number.sort(function(a, b){return a - b});
+        document.write(number)
+    }
+
+</script>
+</body>
+</html>

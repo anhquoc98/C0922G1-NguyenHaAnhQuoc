@@ -6,8 +6,8 @@
 </head>
 <body>
 <script>
-    function isPrime() {
-        let number = parseInt(prompt("số nguyên tố"));
+    let number =+prompt("Kiểm tra số nguyên tố")
+    function isPrime(number) {
         let kiemtra ;
         while (number<100){
             for (let i=2;i<number;i++){
@@ -20,12 +20,13 @@
                if (kiemtra == true) {
                    kiemtra=true
                    alert("là số nguyên tố ");
-               }break;
+                   break;
+               }
             }
         }
 
     }
-    isPrime()
+    isPrime(number)
 </script>
 </body>
 </html>

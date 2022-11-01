@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tách đôi mảng số nguyên ban đầu sang hai mảng,
+        một nửa đầu sang mảng thứ nhất và nửa còn lại sang mảng thứ hai.
+        Sau đó hiển thị hai mảng đó ra màn hình.</title>
+</head>
+<body>
+<script>
+    let a =+prompt('nhập độ dài của mảng');
+    let mang =[];
+    for (let i=0;i<a;i++){
+        mang[i]=+prompt("Nhập giá trị của mảng"+i);
+    }
+    let mang1=[];
+    let mang2 =[];
+        for (let j=0;j<mang.length/2;j++){
+            mang1.indexOf(mang[j]);
+            mang1.push(mang[j]);
+
+        }
+        for (let k=0;k<mang.length;k++){
+            if (mang1.indexOf(mang[k])==-1){
+                mang2.push(mang[k])
+            }
+        }
+
+
+    document.write("Mảng thứ nhất ="+mang1+"Mảng thứ hai ="+mang2)
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình nhập vào một mảng số nguyên và sau đó tách các số chẵn và lẻ trong mảng đó sang hai mảng khác.</title>
+</head>
+<body>
+<script>
+    let a=+prompt("Nhập độ dài mảng")
+    let mang=[];
+    for (let i=0;i<a;i++){
+        mang[i]=+prompt("Mảng số nguyên"+i);
+    }
+    let even =[];
+    let odds=[];
+    for (let j=0;j<mang.length;j++){
+        if (mang[j]%2 ==0){
+            even.indexOf(mang[j]);
+            even.push(mang[j]);
+        }
+        if (mang[j]%2==1){
+            odds.indexOf(mang[j]);
+            odds.push(mang[j]);
+        }
+    }
+    document.write("Mảng số chẳn= "+even+"Mảng số lẽ ="+odds)
+</script>
+</body>
+</html>

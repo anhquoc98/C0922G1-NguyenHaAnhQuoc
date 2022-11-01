@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lớn nhất trong mảng vừa nhập</title>
+</head>
+<body>
+<script>
+    let n =+prompt("Nhập chiều dài của mảng")
+    let a =[];
+    for (let i=0;i<n;i++){
+        a[i]=+prompt("mảng a"+i);
+    }
+    let max =a[0];
+    for (let j=0;j<a.length;j++){
+        if (max<a[j]){
+            max =a[j];
+        }
+    }document.write(max)
+
+</script>
+</body>
+</html>

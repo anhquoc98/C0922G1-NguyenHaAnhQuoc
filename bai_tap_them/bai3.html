@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n= [55,21,1,2,3,4,5,7,8,10,11,15,17,20,13,30];
+    let a =0
+    let b=1;
+    let fibo;
+    let arr =[];
+    let count =[]
+    for (let i=0;i<n.length;i++){
+        fibo=a+b;
+        a =b;
+        b=fibo;
+        arr.push(fibo)
+        if (arr.indexOf(n[i])!== -1){
+            count.push(n[i]);
+        }
+    }
+    document.write(arr)
+    document.write("đã sắp xếp"+count)
+</script>
+</body>
+</html>
